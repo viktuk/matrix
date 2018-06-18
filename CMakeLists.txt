@@ -3,4 +3,4 @@ project(LAB9_5)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(LAB9_5 main.cpp stdafx.h Matrix.cpp Matrix.h)
+add_executable(LAB9_5 main.cpp Matrix.h)
