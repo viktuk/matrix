@@ -1,8 +1,11 @@
-#include "stdafx.h"
+#include <iostream>
+#include <string>
+
+using namespace std;
 #include "Matrix.h"
 
 int main() {
-    Matrix A(2,3), B(3,3);
+    Matrix<double> A(2,3), B(3,3);
     cout<<"A"<<endl;
     cin>>A;
     cout<<"B"<<endl;
@@ -17,7 +20,7 @@ int main() {
     }
     cout << "B+E" << endl;
     try {
-        Matrix E = Matrix().createIdentity(3);
+        Matrix<double> E = Matrix<double>().createIdentity(3);
         cout << B + E << endl;
     }catch(string e){
         cout<<e<<endl;
